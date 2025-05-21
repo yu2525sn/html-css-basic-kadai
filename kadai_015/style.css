@@ -1,0 +1,31 @@
+body {
+  text-align: center; /* 全体中央寄せ */
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif; /* Googleフォント＋総称フォント */
+  font-size: 2rem;                         /* ルート要素の2倍 */
+  letter-spacing: 1.2em;                  /* 文字の大きさに対して1.2倍 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 任意の影 */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 指定の実線 */
+}
+
+/* 文字色の装飾（MとPのみ） */
+.blue {
+  color: skyblue;
+}
+
+.pink {
+  color: rgb(255, 192, 203) ;
+}
+
+/* #basic の中だけ太字に */
+#basic p {
+  font-weight: bold;
+}
+
+/* それ以外の p は普通の太さ */
+body p {
+  font-weight: normal;
+}
