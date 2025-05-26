@@ -1,0 +1,86 @@
+/* 共通リセット */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 上部 #top のスタイル */
+#top {
+  width: 800px;
+  background-color: #dcc9f4;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.top-child {
+  width: 20%;
+  background-color: #ffd9df;
+  display: inline-block;
+}
+
+/* 中央 #middle のスタイル */
+#middle {
+  width: 800px;
+  height: 800px;
+  background-color: #ffd9df;
+  margin: 20px auto;
+  position: relative;
+}
+
+#middle-child01,
+#middle-child02,
+#middle-child03 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;
+  position: absolute;
+}
+
+#middle-child01 {
+  top: 100px;
+  left: 100px;
+}
+
+#middle-child02 {
+  top: 300px;
+  left: 300px;
+}
+
+#middle-child03 {
+  top: 500px;
+  left: 500px;
+}
+
+/* 下部 #bottom のスタイル */
+#bottom {
+  width: 800px;
+  height: 300px;
+  background-color: #87ceeb;
+  margin: 20px auto;
+}
+
+#bottom-child01,
+#bottom-child02,
+#bottom-child03 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+  left: 200px; /* 初期中央揃えの基準位置 */
+}
+
+#bottom-child01 {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  
+}
+
+#bottom-child02 {
+  position: relative;
+  left: 200px;/* 左に200px移動 */
+}
+
+#bottom-child03 {
+  position: relative;
+  left: 400px;
+}
