@@ -1,0 +1,148 @@
+body, h1, p {
+  margin: 0;
+}
+p, a {
+  font-size: 20px;
+}
+header {
+  margin-bottom: 20px;              /* 下の余白 */
+  background-color: rgb(244, 79, 79); /* 背景色 */
+  text-align: center;               /* 中の要素を中央揃え */
+}
+
+header h1 {
+  color: rgb(255, 255, 255);        /* 文字色 */
+}
+
+/* main要素内の余白を上下左右10px */
+main {
+    padding: 10px;
+}
+
+/* #parentをFlexコンテナにして、子要素を均等に配置 */
+#parent {
+    display: flex;
+    justify-content: space-evenly; /* 両端を含め均等配置 */
+    flex-wrap: wrap; /* 画面が狭いとき折り返す */
+}
+
+/* .contents のスタイル設定 */
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* h2のスタイル設定 */
+.contents h2 {
+    font-size: 25px;
+    border-bottom: 3px dotted rgb(236, 122, 122);
+    position: relative;
+    padding-left: 100px; /* 「●」のスペース */
+}
+
+/* h2の先頭に「●」記号を追加 */
+.contents h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+   /* position: absolute;
+    left: 0*/
+}
+
+/* .contents内の2番目のpの最初の文字を装飾 */
+.contents p:nth-of-type(2)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+
+/* main要素内の余白を上下左右10px */
+main {
+    padding: 10px;
+}
+
+/* #parent をFlexコンテナにして、子要素を均等に配置 */
+#parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* .contents のスタイル設定 */
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* .contents 内の img スタイル設定 */
+.contents img {
+    margin: 10px 0;
+    width: 70%;
+}
+
+/* h2スタイル */
+.contents h2 {
+    font-size: 25px;
+    border-bottom: 3px dotted rgb(236, 122, 122);
+    position: relative;
+    padding-left: 20px;
+}
+
+/* h2の前に●マークを追加 */
+.contents h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+    font-size: 20px;
+}
+
+/* .contents内2番目のpの最初の文字にスタイル適用 */
+.contents p:nth-of-type(2)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+
+/* フッター全体のスタイル */
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+    padding: 10px;
+}
+
+/* フッター内のリンク */
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* 訪問済みリンク */
+footer a:visited {
+    color: rgb(193, 234, 251);
+}
+
+/* ホバー時の色変更 */
+footer a:hover {
+    color: rgb(245, 178, 168);
+}
+
+/* ===== レスポンシブ対応 (768px以下) ===== */
+@media screen and (max-width: 768px) {
+    /* 親を縦並びに変更 */
+    #parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* h2フォントサイズ変更 */
+    .contents h2 {
+        font-size: 30px;
+    }
+
+    /* pタグフォントサイズ変更 */
+    .contents p {
+        font-size: 25px;
+    }
+}
